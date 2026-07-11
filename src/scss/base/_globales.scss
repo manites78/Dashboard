@@ -1,0 +1,37 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+}
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: v.$fondo-principal;
+    font-family: v.$fuente--principal;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1,h2,h3 {
+    color: v.$white;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bi {
+    color: v.$white;
+}
+

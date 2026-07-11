@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixin' as m;
+
+
+
+.main-contenido {
+    padding: 2.4rem 3rem;
+    min-height: 100vh;
+    margin-left: 16rem;
+    margin-top: 6rem;
+}
+
+.nombre {
+    width: auto;
+    max-width: 40rem;
+    margin: 0;
+    padding: 2.4rem 3rem;
+}
+
+
+.console {
+    padding: 20rem 50rem;
+    margin: 2rem;
+    border: 5px solid black;
+    color: black;
+    background: linear-gradient(135deg, #0a0612 0%, #1a0f2e 50%, #120a1f 100%);
+
+    .console--input {
+        
+    }
+}

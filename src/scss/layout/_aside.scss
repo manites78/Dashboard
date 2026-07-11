@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixin' as m;
+
+.aside {
+    background-color: v.$sidebar;
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    height: 100vh;
+    width: 16rem;
+    overflow-y: auto;
+}
+
+.navegacion--ul {
+    @include m.resetear;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;           // asegura que el ul mismo ocupe todo el ancho del aside
+    padding: 1rem 0;       // usa padding en vez de margin en los lados
+    text-align: left;
+
+    li {
+        width: 100%;         // fuerza que cada li ocupe todo el ancho
+    }
+
+    .bi {
+        margin: 1rem;
+        font-size: 1.6rem;
+    }
+
+    a {
+        display: block;      // convierte el link en bloque, ocupa todo el ancho del li
+        width: 100%;
+        margin: .6rem;
+        padding: 1.2rem 0;     // reemplaza el margin: 1rem 0 que tenías
+        font-size: 1.8rem;
+        color: v.$white;
+
+        &:hover {
+            color: v.$text-dark;
+        }
+    }
+}

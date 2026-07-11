@@ -12,19 +12,17 @@
   },
   "license": "ISC",
   "author": "Juan Pablo",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": ""
+    "gulp": "gulp"
   },
   "devDependencies": {
     "bootstrap-icons": "^1.13.1",
     "gulp": "^5.0.1",
     "gulp-sass": "^6.0.1",
+    "modern-normalize": "^3.0.1",
     "sass": "^1.101.0"
-  },
-  "dependencies": {
-    "modern-normalize": "^3.0.1"
   }
 }

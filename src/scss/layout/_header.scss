@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+@use 'base/mixin' as m;
+
+.bi {
+    font-size: 4rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$navbar;
+    padding: 1rem 2rem;
+
+    .boton {
+        background: transparent;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @include m.telefono {
+        gap: 2rem;
+    }
+    .navegacion--link {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: v.$text-dark;
+    }
+}

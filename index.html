@@ -3,10 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="build/css/app.css">
     <title>Dashboard</title>
 </head>
 <body>
     
+    <header class="header">
+        <button class="boton">
+            <i class="bi bi-list"></i>
+        </button>   
+        <nav class="navegacion">
+            <a class="navegacion--link" href="#">
+                <i class="bi bi-person-circle"></i>
+            </a>
+            <a class="navegacion--link" href="#">Cerrar Sesion</a>
+        </nav>
+    </header>
+
+
+    <aside class="aside">
+        <ul class="navegacion--ul">
+            <li>
+                <a href="">
+                    <i class="bi bi-terminal"></i>
+                    Consola
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-people-fill"></i>
+                    Usuarios
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-folder-fill"></i>
+                    Archivos
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bi bi-gear"></i>
+                    Software
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bi bi-plugin"></i>
+                    Plugins
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bi bi-globe-americas"></i>
+                    Mundos
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-cloud-download"></i>
+                    La Nube
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="main-contenido">
+        <div class="nombre">
+            <h1>Panel de Control</h1>
+            <h2>Hola Juan Pablo</h2>
+        </div>
+
+        <div id="console-panel" class="console nombre">
+            <div id="console-output"></div>
+            <input class="console--input" id="console-input" type="text" placeholder="Escribe un comando..." />
+        </div>
+    </div>
+
 </body>
 </html>
