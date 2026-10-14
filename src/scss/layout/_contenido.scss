@@ -4,10 +4,14 @@
 
 
 .main-contenido {
-    padding: 2rem 1rem;
+    padding: 9rem 2rem 2rem;
     min-height: 100vh;
-    margin-left: 16rem;
-    margin-top: 2rem;
+    margin-left: 24rem;
+    transition: margin-left .2s ease;
+}
+
+body.sidebar-collapsed .main-contenido {
+    margin-left: 7.2rem;
 }
 
 .nombre {
@@ -31,6 +35,23 @@
     margin-left: 2rem;
     border: 5px solid black;
     background: linear-gradient(135deg, #0a0612 0%, #1a0f2e 50%, #120a1f 100%);
+}
+
+@media (max-width: 767px) {
+    .main-contenido,
+    body.sidebar-collapsed .main-contenido {
+        margin-left: 0;
+        padding: 9rem 1rem 2rem;
+    }
+
+    .nombre {
+        padding: 1rem;
+    }
+
+    .console {
+        margin-left: 0;
+        padding: 1rem;
+    }
 }
 
 .console-output {

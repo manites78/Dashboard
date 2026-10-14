@@ -10,6 +10,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 7rem;
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -20,10 +21,15 @@
     .boton {
         background: transparent;
         border: none;
+        padding: 0;
 
         &:hover {
             cursor: pointer;
         }
+    }
+
+    > .boton .bi {
+        font-size: 2.8rem;
     }
 }
 
@@ -38,5 +44,9 @@
         font-size: 1.4rem;
         font-weight: 700;
         color: v.$text-dark;
+
+        .bi {
+            font-size: 1.8rem;
+        }
     }
 }
