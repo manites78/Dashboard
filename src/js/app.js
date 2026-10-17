@@ -34,6 +34,7 @@ function escribirInsertar(cmd) {
         case "help":
             logToConsole("Comandos disponibles:", "info");
             logToConsole("  help          - muestra esta ayuda", "info");
+            logToConsole(" ")
             logToConsole("  clear         - limpia la consola", "info");
             logToConsole("  status        - muestra estado del sistema", "info");
             logToConsole("  echo [texto]  - repite el texto que escribas", "info");
@@ -53,6 +54,9 @@ function escribirInsertar(cmd) {
 
         case "hola":
             logToConsole("pipe es cacorro");
+            break;
+        
+        case "":
             break;
 
         default:
